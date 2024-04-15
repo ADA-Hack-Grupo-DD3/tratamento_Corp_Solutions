@@ -21,8 +21,8 @@ Bem vindo ao nosso projeto do Hackaton
 Para este projeto, vamos estar trabalhando usando linguagem Python em conjunto com suas ferramentas integradas. Portanto, recomendamos seguir as tecnologias indicadas nesta seção para conseguir compreender e ter uma experiência agradável neste projeto.
 
 <h2 id="passoapasso"> Passo a Passo</h2>
-- Instale o [Python](https://www.python.org/downloads/) em sua versão 3.10 ou superior.
-- Instale o Gerenciar de Pacotes Python Poetry atraves do tutorial feito pelo [Mauricio Benjamin](https://github.com/mauriciobenjamin700/Poetry-Learning) ou apartir da [documentação oficial](https://python-poetry.org/docs/#installation).
+- Instale o <a href="https://www.python.org/downloads/">Python</a> em sua versão 3.10 ou superior.
+- Instale o Gerenciar de Pacotes Python Poetry atraves do tutorial feito pelo <a href="https://github.com/mauriciobenjamin700/Poetry-Learning">Mauricio Benjamin</a> ou apartir da <a href="https://python-poetry.org/docs/#installation">documentação oficial</a>.
 
 
 - Instale as dependencias necessárias
@@ -31,7 +31,7 @@ poetry install
 ```
 
 <h2 id="bancodedados"> Banco de Dados</h2>
-Para acessar os dados processados, acesse nosso banco de dados postgreeSQL mantido na nuvem por meio do serviço [Elephant SQL](https://www.elephantsql.com/)
+Para acessar os dados processados, acesse nosso banco de dados postgreeSQL mantido na nuvem por meio do serviço <a href="https://www.elephantsql.com/">Elephant SQL</a>
 
 Credenciais do Banco de dados (Copie apenas o conteúdo dentro das **aspas**):
 - **database:** "ydgyztao",
