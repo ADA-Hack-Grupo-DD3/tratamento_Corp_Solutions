@@ -3,12 +3,6 @@ Bem vindo ao nosso projeto do Hackaton
         <ul>
             <li><a href="#tratamento">Tratamento Corpo Solution</a>
                 <ul>
-                    <li><a href="#dependencias">Dependências necessárias</a>
-                        <ul>
-                            <li><a href="#passoapasso">Passo a Passo</a></li>
-                            <li><a href="#bancodedados">Banco de Dados</a></li>
-                        </ul>
-                    </li>
                     <li><a href="#etl">Extração, Transformação e Carregamento(ETL) dos Dados</a>
                         <ul>
                             <li><a href="#dsbasededados">Base de Dados</a></li>
@@ -16,13 +10,48 @@ Bem vindo ao nosso projeto do Hackaton
                             <li><a href="#dsibge">IBGE</a></li>
                         </ul>
                     </li>
+                    <li><a href="#dependencias">Dependências necessárias</a>
+                        <ul>
+                            <li><a href="#passoapasso">Passo a Passo</a></li>
+                            <li><a href="#bancodedados">Banco de Dados</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
  
  
-<h2 id="tratamento">Tratamento_Corp_Solutions</h1>
-## Primeiros Passos Sobre o Projeto
+<h2 id="etl">Extração, Transformação e Carregamento(ETL) dos Dados</h1>
+O processo de ETL é fundamental na gestão e análise de dados. Ele compreende três etapas principais:
+
+1. <b>Extração</b>: Nesta etapa, os dados são coletados de suas fontes de origem, que podem incluir bancos de dados, arquivos, APIs ou outras fontes de dados. A extração envolve acessar e capturar os dados brutos de suas fontes e transferi-los para um ambiente de armazenamento centralizado.
+
+2. <b>Transformação</b>: Após a extração, os dados brutos passam por processos de transformação para prepará-los para análise. Isso pode incluir limpeza de dados, padronização de formatos, remoção de duplicatas, correção de erros e agregação de informações. A transformação visa garantir que os dados estejam consistentes, precisos e prontos para serem utilizados nas análises.
+
+3. <b>Carregamento</b>: Por fim, os dados transformados são carregados em um destino final, como um data warehouse, um banco de dados ou uma ferramenta de análise. Nesta etapa, os dados são organizados e estruturados de forma adequada para facilitar o acesso e a consulta posterior. O carregamento pode ser realizado de forma incremental, adicionando novos dados aos já existentes, ou de forma completa, substituindo os dados antigos pelos novos.
+
+O processo de ETL é essencial para garantir a qualidade e a integridade dos dados, preparando-os para serem utilizados em análises e tomadas de decisão. Ele proporciona uma base sólida para a realização de análises de dados eficazes e ajuda a garantir que as informações obtidas sejam confiáveis e relevantes para os objetivos do negócio.
+
+<h3 id="dsbasededados"> Base de Dados</h3>
+<h3 id="dsstateofdata"> State of Data</h3>
+
+O segundo conjunto de dados com o qual vamos trabalhar neste projeto é originado da comunidade _Data Hackers_, denominado **State_of_data_2022.csv**. Essa pesquisa foi conduzida em 2022 e seus dados foram divulgados em 2023, fornecendo informações sobre pessoas ligadas à área de dados. Uma observação importante é que uma pesquisa mais recente foi realizada em 2023, porém o conjunto de dados completo ainda não foi divulgado até a presente data. Utilizaremos este conjunto de dados para fazer uma comparação com os dados da Corp Solutions, a fim de obtermos um ponto de comparação e identificar insights.
+
+O arquivo conta com 4271 registros distribuídos em 353 colunas. Devido à complexidade e ao tamanho do arquivo, optamos por realizar o processo de limpeza dos dados diretamente pelo Excel. Para isso, transformamos o arquivo de **CSV** para **XLXS**, desta forma retirando a separação dos registros por vírgula. Para deixar o arquivo o mais próximo possível da base de dados da Corp Solutions, excluímos 347 colunas, deixando apenas as que iríamos necessitar para análise, conforme abaixo:
+
+|id|Gênero|Idade|Raça|Formação|Estado|Senioridade|
+|---|---|---|---|---|---|---|
+|1|Masc|39|Parda|Pós-graduação|Distrito Federal|Analista Júnior|
+|2|Masc|32|Parda|Ensino Superior|Pará|Gerente|
+|3|Masc|53|Branca|Pós-graduação|Distrito Federal|Analista Pleno|
+|4|Masc|27|Branca|Doutorado|Minas Gerais|Analista Sênior|
+|5|Fem|46|Branca|Pós-graduação|Pará|Analista Pleno|
+
+Além da exclusão das colunas que diferenciavam este conjunto de dados do da Corp Solutions, modificamos os títulos para que ficassem condizentes com os títulos do conjunto de dados da Corp Solutions. Também realizamos o processo de alteração de alguns dados que estavam fora do padrão _UTF-8_, utilizando a função de localizar/substituir do próprio Excel. O arquivo foi salvo com o nome de **State of Data 2022 - Modificada.xlsx** para melhor compreensão em relação ao processo de limpeza dos dados do dataset.
+
+<h3 id="dsibge"> IBGE</h3>
+
+
 
 <h2 id="dependencias"> Dependências necessárias</h2>
 Para este projeto, vamos estar trabalhando usando linguagem Python em conjunto com suas ferramentas integradas. Portanto, recomendamos seguir as tecnologias indicadas nesta seção para conseguir compreender e ter uma experiência agradável neste projeto.
