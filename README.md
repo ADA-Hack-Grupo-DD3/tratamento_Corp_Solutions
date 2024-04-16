@@ -1,5 +1,6 @@
-Bem vindo ao nosso projeto do Hackaton
-<h1>Sumário</h1>
+<h1>Bem vindo ao nosso projeto do Hackaton</h1>
+
+<h2>Sumário</h2>
         <ul>
             <li><a href="#tratamento">Tratamento Corpo Solution</a>
                 <ul>
