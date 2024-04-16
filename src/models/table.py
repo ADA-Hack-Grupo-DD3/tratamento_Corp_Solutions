@@ -51,3 +51,27 @@ def get_value(cursor: object, table: str, condition: str) -> tuple:
     query = f"SELECT * FROM {table} WHERE {condition}"
     cursor.execute(query)
     return cursor.fetchall()
+
+
+def remove_nan_records(conn, cursor, table, columns):
+    # Construa a consulta SQL para remover registros com valores NaN
+    remove_nan_query = """
+        DELETE FROM {}
+        WHERE True IN (
+            {}
+        );
+    """
+
+    # Construa a parte da consulta que verifica se qualquer coluna contém NaN
+    nan_checks = []
+    for column in columns:
+        nan_checks.append(f" {column} IS NULL OR {column} = 'NaN' ")
+
+    # Substitua {} na consulta SQL pelo nome da tabela
+    remove_nan_query = remove_nan_query.format(table, " OR ".join(nan_checks))
+
+    # Execute a consulta SQL
+    cursor.execute(remove_nan_query)
+
+    # Faça commit para confirmar as alterações
+    conn.commit()
