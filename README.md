@@ -51,7 +51,15 @@ Além da exclusão das colunas que diferenciavam este conjunto de dados do da Co
 
 <h3 id="dsibge"> IBGE</h3>
 
+O terceiro conjunto de dados que utilizaremos em nossa análise é um conjunto de dados sobre o censo de 2022. Ele será empregado para identificar correlações entre os padrões de cor/raça dos funcionários da Corp Solutions e os dados do censo coletados no ano de 2022. Nosso objetivo é identificar padrões e possíveis disparidades em relação à cor e raça dentro da empresa, em comparação com os dados do Brasil. O conjunto de dados do censo mostra a quantidade de pessoas por estado, classificadas de acordo com sua cor/raça, divididas em Branco, Preto, Amarelo, Pardo e Indígena.
 
+Assim como fizemos com os dados do conjunto de dados da comunidade _Data Hackers_, optamos por realizar o processo de limpeza diretamente no arquivo deste dataset. Removemos as somatórias dos valores totais e as macrorregiões do Brasil (Norte, Nordeste, Centro-Oeste, Sudeste e Sul). Também eliminamos as variações e os dados do censo realizados no ano de 2010, mantendo apenas os dados do ano de 2022. Adicionamos uma coluna com as macrorregiões do Brasil para facilitar a obtenção de insights futuros.
+
+<img src="src/img/img1.png" alt="Dataset antes da ETL">
+<b><i><small>Dataset antes da limpeza dos dados</small></b></i>
+
+<img src="src/img/img2.png" alt="Dataset depois do processo de ETL">
+<b><i><small>Dataset após a limpeza dos dados</small></b></i>
 
 <h2 id="dependencias"> Dependências necessárias</h2>
 Para este projeto, vamos estar trabalhando usando linguagem Python em conjunto com suas ferramentas integradas. Portanto, recomendamos seguir as tecnologias indicadas nesta seção para conseguir compreender e ter uma experiência agradável neste projeto.
