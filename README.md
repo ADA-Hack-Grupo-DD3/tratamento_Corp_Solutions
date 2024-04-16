@@ -126,10 +126,10 @@ O terceiro conjunto de dados que utilizaremos em nossa análise é um conjunto d
 Assim como fizemos com os dados do conjunto de dados da comunidade _Data Hackers_, optamos por realizar o processo de limpeza diretamente no arquivo deste dataset. Removemos as somatórias dos valores totais e as macrorregiões do Brasil (Norte, Nordeste, Centro-Oeste, Sudeste e Sul). Também eliminamos as variações e os dados do censo realizados no ano de 2010, mantendo apenas os dados do ano de 2022. Adicionamos uma coluna com as macrorregiões do Brasil para facilitar a obtenção de insights futuros.
 
 <b><i><small>Dataset antes da limpeza dos dados</small></b></i>
-<img src="src/img/img1.png" alt="Dataset antes da ETL">
+<img src="img/img1.png" alt="Dataset antes da ETL">
 
 <b><i><small>Dataset após a limpeza dos dados</small></b></i>
-<img src="src/img/img2.png" alt="Dataset depois do processo de ETL">
+<img src="img/img2.png" alt="Dataset depois do processo de ETL">
 
 <h2 id="dependencias"> Dependências necessárias</h2>
 Para este projeto, vamos estar trabalhando usando linguagem Python em conjunto com suas ferramentas integradas. Portanto, recomendamos seguir as tecnologias indicadas nesta seção para conseguir compreender e ter uma experiência agradável neste projeto.
@@ -138,14 +138,13 @@ Para este projeto, vamos estar trabalhando usando linguagem Python em conjunto c
 - Instale o <a href="https://www.python.org/downloads/">Python</a> em sua versão 3.10 ou superior.
 - Instale o Gerenciar de Pacotes Python Poetry atraves do tutorial feito pelo <a href="https://github.com/mauriciobenjamin700/Poetry-Learning">Mauricio Benjamin</a> ou apartir da <a href="https://python-poetry.org/docs/#installation">documentação oficial</a>.
 
-
 - Instale as dependencias necessárias
 ```bash
 poetry install
 ```
 
 <h2 id="bancodedados"> Banco de Dados</h2>
-Para acessar os dados processados, acesse nosso banco de dados postgreeSQL mantido na nuvem por meio do serviço <a href="https://www.elephantsql.com/">Elephant SQL</a>
+Para acessar os dados processados, acesse nosso banco de dados postgreeSQL mantido na nuvem (Máximo de 5 acessos simultâneos) por meio do serviço <a href="https://www.elephantsql.com/">Elephant SQL</a>
 
 Credenciais do Banco de dados (Copie apenas o conteúdo dentro das **aspas**):
 - **database:** "ydgyztao",
