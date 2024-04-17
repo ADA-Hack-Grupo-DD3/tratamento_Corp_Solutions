@@ -98,6 +98,8 @@ Foi feita uma analise nos funcionários com idade entre 14 e 18 anos para identi
 
 Fizemos a remoção da coluna **id.1** devido ao fato de já ter uma coluna de id, e **endereço** pois os registros desta coluna não faram diferença em nossa analise. Adicionamos uma nova coluna com o nome de **Idade Ingresso** para identificarmos com qual idade aquele funcionário entrou na empresa, para fazer este calculo, fizemos a subtração da idade do funcionário em relação ao seu tempo de casa.
 
+A coluna "Formação" também apresentou uma inconsistência onde 22 valores estavam declarados com uma string "nan", foi utilizado o código df_filtrado2 = df_filtrado2.loc[df_filtrado2['Formação'] != "nan"] para remoção desses valores.
+
 Para finalizar, fizemos a correção do tipo dos dados das colunas **Idade**, **Tempo de casa** e **Idade Ingresso** de _float_ para _inteiro_.
 
 
