@@ -36,13 +36,13 @@ O processo de ETL é essencial para garantir a qualidade e a integridade dos dad
 
 O primeiro conjunto de dados que utilizaremos no projeto são os dados dos funcionários da Corp Solutions, denominado base_dados.csv. Essa base de dados possui um total de 10.000 registros distribuídos em 12 colunas (id, id, Nome, Genero, Idade, Raça, Endereço, Formação, Estado, Tempo de casa, Departamento, Senioridade). Segue abaixo os 5 primeiros registos do daseset.
 
-|id|id.1|Nome|Genero|Idade|Raça|Endereço|Formação|Estado|Tempo de casa|Departamento|Senioridade|
-|---|---|---|---|---|---|---|---|---|---|---|---|
-|0|1|1|Eleonora Arilda Penedo Gomes de Padilha|Fem|34.0|pardo|9155 Harold Oval\nSellersside, FL 21337|Ensino Médio|Santa Catarina|12.0|Compras|Analista Pleno|
-|1|2|2|Elisângela Gabrielle de Osório|Fem|26.0|pardo|941 Martin Manor\nLake Isaiahtown, FM 43797|Ensino Médio|Pará|6.0|Contabilidade|Analista Júnior|
-|2|3|3|José Túlio de Cabral|Masc|35.0|pardo|110 Davis Ridges\nMejiaville, LA 17095|Ensino Médio|Santa Catarina|5.0|Vendas|Analista Pleno|
-|3|4|4|Ezequiel Edivaldo de Medeiros Sonao|Masc|24.0|pardo|48010 Wilson Glen Apt. 749\nSmithborough, NV 0...|Ensino Superior|Tocantins|4.0|Administrativo|Gerente|
-|4|5|5|Fagner Josiel dos Santos|Masc|21.0|pardo|8666 Ramos Ports Apt. 070\nSandraport, MN 33570|Ensino Superior|Ceará|5.0|Recursos Humanos|Analista Júnior|
+|id|Nome|Genero|Idade|Raça|Endereço|Formação|Estado|Tempo de casa|Departamento|Senioridade|
+|---|---|---|---|---|---|---|---|---|---|---|
+|0|Eleonora Arilda Penedo Gomes de Padilha|Fem|34.0|pardo|9155 Harold Oval\nSellersside, FL 21337|Ensino Médio|Santa Catarina|12.0|Compras|Analista Pleno|
+|1|Elisângela Gabrielle de Osório|Fem|26.0|pardo|941 Martin Manor\nLake Isaiahtown, FM 43797|Ensino Médio|Pará|6.0|Contabilidade|Analista Júnior|
+|2|José Túlio de Cabral|Masc|35.0|pardo|110 Davis Ridges\nMejiaville, LA 17095|Ensino Médio|Santa Catarina|5.0|Vendas|Analista Pleno|
+|3|Ezequiel Edivaldo de Medeiros Sonao|Masc|24.0|pardo|48010 Wilson Glen Apt. 749\nSmithborough, NV 0...|Ensino Superior|Tocantins|4.0|Administrativo|Gerente|
+|4|Fagner Josiel dos Santos|Masc|21.0|pardo|8666 Ramos Ports Apt. 070\nSandraport, MN 33570|Ensino Superior|Ceará|5.0|Recursos Humanos|Analista Júnior|
 
 O primeiro passo foi importar a Biblioteca `Pandas` dentro do Python para fazer toda a manipulação dos dados.
 
